@@ -130,8 +130,12 @@ iframe {
 }
 
 .product-cell-formatter ul {
-    list-style: none;
     padding-right: 42px;
+    font-size: 0.9em;
+}
+
+.product-cell-formatter ul li {
+    margin-bottom: 6px;
 }
 
 .product-cell-formatter button {
@@ -184,7 +188,7 @@ iframe {
 footer {
     display: grid;
     position: relative;
-    top: 172px;
+    top: 200px;
     background-color: lightgray;
 }
 
@@ -203,11 +207,18 @@ footer p {
     margin-top: 0px;
 }
 
+
+
+
 @media (max-width: 700px) {
 
     .descrip h2, .descrip p {
         font-size: 13px;
     }
 
+    .product-cell-formatter ul {
+        padding-right: 42px;
+        font-size: 0.45em;
+    }
     
 }
