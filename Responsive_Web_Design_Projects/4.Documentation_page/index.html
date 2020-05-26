@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/styles.css">
+    <title>Documetation Page</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li>
+                <a href="#Whetting_Your_Appetite" class="nav-link">Whetting Your Appetite</a>
+            </li>
+            <li>
+                <a href="#Using_the_Python_Interpreter" class="nav-link">Using the Python Interpreter</a>
+            </li>
+            <li>
+                <a href="#An_Informal_Introduction_to_Python" class="nav-link">An Informal Introduction to Python</a>
+            </li>
+            <li>
+                <a href="#More_Control_Flow_Tools" class="nav-link">More Control Flow Tools</a>
+            </li>
+            <li>
+                <a href="#Data_Structures" class="nav-link">Data Structures</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Whetting_Your_Appetite" class="main-section">
+            <header>Whetting Your Appetite</header>
+            <p>Python is an interpreted language, which can save you considerable time during program development because no compilation and linking is necessary. The interpreter can be used interactively, which makes it easy to experiment with features
+                of the language, to write throw-away programs, or to test functions during bottom-up program development. It is also a handy desk calculator.</p>
+            <p>Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:</p>
+            <ul>
+                <li>the high-level data types allow you to express complex operations in a single statement</li>
+                <li>statement grouping is done by indentation instead of beginning and ending brackets</li>
+                <li>no variable or argument declarations are necessary</li>
+            </ul>
+        </section>
+
+        <section id="Using_the_Python_Interpreter" class="main-section">
+            <header>Using the Python Interpreter</header>
+            <p>The Python interpreter is usually installed as /usr/local/bin/python3.8 on those machines where it is available; putting /usr/local/bin in your Unix shell’s search path makes it possible to start it by typing the command:</p>
+            <pre><code>python3.8</code></pre>
+            <p>A second way of starting the interpreter is</p>
+            <pre><code>python -c command [arg] ...</code></pre>
+            <p>which executes the statement(s) in command, analogous to the shell’s -c option. Since Python statements often contain spaces or other characters that are special to the shell, it is usually advised to quote command in its entirety with single
+                quotes.
+            </p>
+        </section>
+
+        <section id="An_Informal_Introduction_to_Python" class="main-section">
+            <header>An Informal Introduction to Python</header>
+            <p>Many of the examples in this manual, even those entered at the interactive prompt, include comments. Comments in Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the start of a line
+                or following whitespace or code, but not within a string literal. A hash character within a string literal is just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted when typing
+                in examples.</p>
+            <p>Some examples:</p>
+            <pre><code>
+    # this is the first comment
+    spam = 1  # and this is the second comment 
+              # ... and now a third!
+    text = "# This is not a comment because it's inside quotes."</code></pre>
+            <pre><code>
+    >>> 2 + 2
+    4
+    >>> 50 - 5*6
+    20
+    >>> (50 - 5*6) / 4
+    5.0
+    >>> 8 / 5  # division always returns a floating point number
+    1.6</code></pre>
+        </section>
+
+        <section id="More_Control_Flow_Tools" class="main-section">
+            <header>More Control Flow Tools</header>
+            <p>Besides the while statement just introduced, Python uses the usual flow control statements known from other languages, with some twists.</p>
+            <p>Perhaps the most well-known statement type is the if statement. For example:</p>
+            <pre><code>
+    >>> x = int(input("Please enter an integer: "))
+    Please enter an integer: 42
+    >>> if x < 0:
+    ...     x = 0
+    ...     print('Negative changed to zero')
+    ... elif x == 0:
+    ...     print('Zero')
+    ... elif x == 1:
+    ...     print('Single')
+    ... else:
+    ...     print('More')
+    ...
+    More</code></pre>
+        </section>
+
+        <section id="Data_Structures" class="main-section">
+            <header>Data Structures</header>
+            <p>This chapter describes some things you’ve learned about already in more detail, and adds some new things as well.</p>
+            <p>The list data type has some more methods. Here are all of the methods of list objects:</p>
+            <ul>
+                <li>list.append(x)</li>
+                <li>list.extend(iterable)</li>
+                <li>list.insert(i, x)</li>
+                <li>list.remove(x)</li>
+                <li>list.pop([i])</li>
+                <li>list.clear()</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
