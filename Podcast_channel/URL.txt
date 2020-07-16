@@ -1,0 +1,11 @@
+
+
+	- AWS
+	  
+	  http://podcastchido.tk/
+
+
+	- Cloud Foundry (IBM Cloud Platform)
+
+	  https://simple-toolchain-podcastjabv.mybluemix.net/
+
